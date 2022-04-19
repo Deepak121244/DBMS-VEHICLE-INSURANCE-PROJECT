@@ -25,5 +25,5 @@ values
     ('3022','William','DAVID','1992-03-02','6127946646','m','sanjana13krupati@gmail.com','married','7329FH3NI','GJSPN7532'),
     ('3023','thomas','shelby','1980-08-12','6127930183','m','sanjana13krupati@gmail.com','married','5329FH3AI','GJSPN7532'),
     ('3024','Christine','noel','1976-12-12','6129901623','f','sanjana13krupati@gmail.com','married','5733FH33I','GJSPN7532'),
-    ('3025','sanjay','krupati','2000-08-12','6798649264','m','sanjana13krupati@gmail.com','married','5732F833I','GJSPN7532');
+    ('3025','sanjay','kurupati','2000-08-12','6798649264','m','sanjana13krupati@gmail.com','married','5732F833I','GJSPN7532');
     
