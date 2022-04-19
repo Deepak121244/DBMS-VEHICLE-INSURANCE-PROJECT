@@ -1,6 +1,6 @@
--- drop database if exists T14_Vehical_insurance;
-create database if not exists T14_Vehical_insurance;
+
 use T14_Vehical_insurance;
+create database if not exists T14_Vehical_insurance;
 
 CREATE TABLE if not exists customer(
     cust_id varchar(20) primary key,
@@ -8,11 +8,11 @@ CREATE TABLE if not exists customer(
     cust_lname VARCHAR(10),
     cust_DOB DATE,
     cust_gender CHAR(2),
-    cust_mob_number INTEGER,
+    cust_mob_number decimal(10,0),
     cust_email VARCHAR(20),
     cust_passport_number VARCHAR(20),
-    cust_martial_status CHAR(8),
-    cust_ppS_number INTEGER
+    cust_martial_status CHAR(10),
+    cust_ppS_number char(9)
 );
 
 CREATE TABLE IF NOT EXISTS `Application`(
@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS insurance_policy(
     `expiry_date` DATETIME,
     term_condition_description VARCHAR(100)
 );
-CREATE TABLE IF NOT EXISTS premium_payment(   -- premium to premium_payment 
+CREATE TABLE IF NOT EXISTS premium_payment(    
     premium_payment_id VARCHAR(20) primary key,
     cust_id VARCHAR(20),
     policy_number VARCHAR(20),
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS vehicle(
     vehicle_number VARCHAR(20),
     vehicle_model_number VARCHAR(20)
 );
--- drop table if exists claim;
+
 CREATE TABLE IF NOT EXISTS claim(
     claim_id	    VARCHAR(20) primary key,
     cust_id	        VARCHAR(20),
@@ -217,7 +217,7 @@ CREATE TABLE IF NOT EXISTS insurance_policy_coverage(
     agreement_id VARCHAR(20) primary key,	
     coverage_id	 VARCHAR(20)
     );
-
+show tables;
 describe customer;
 describe application;
 describe quote;
